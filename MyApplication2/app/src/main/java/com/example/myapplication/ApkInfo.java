@@ -48,7 +48,7 @@ public class ApkInfo extends Activity {
     TextView appLabel, packageName, version, features,result;
     TextView permissions, andVersion, installed, lastModify, path;
     PackageInfo packageInfo;
-    Button uninstall,sp,enc;
+    Button uninstall,sp,enc,leak;
     String apName, packName, ver, andVer, ins, lmod, pth;
 
     //socket kaga
@@ -157,6 +157,7 @@ public class ApkInfo extends Activity {
 
         sp=findViewById(R.id.sp);
         enc=findViewById(R.id.enc);
+        leak=findViewById(R.id.leak);
 
         uninstall.setOnClickListener(new View.OnClickListener() {
 
@@ -187,6 +188,13 @@ public class ApkInfo extends Activity {
             }
         });
 
+        leak.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                sendPackageNames();
+            }
+        });
+
 
 
 
@@ -211,7 +219,7 @@ public class ApkInfo extends Activity {
             {
                 // String mess="helllooo";
 
-                s=new Socket(ip,5010);
+                s=new Socket(ip,5008);
                 os=new ObjectOutputStream(s.getOutputStream());
                 os.writeObject(packName);
                 os.flush();

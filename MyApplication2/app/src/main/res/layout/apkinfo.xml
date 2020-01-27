@@ -230,6 +230,19 @@
             android:paddingLeft="24dp"
             android:text="Encrypted file Check" />
 
+        <Button
+            android:id="@+id/leak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enc"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="248dp"
+            android:layout_marginRight="248dp"
+            android:paddingLeft="24dp"
+            android:text="Data Leakage Check" />
+
         <TextView
             android:id="@+id/result"
             android:layout_width="wrap_content"
