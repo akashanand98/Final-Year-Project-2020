@@ -18,8 +18,8 @@ public class execution {
 	
     public static void main(String[] args) throws ClassNotFoundException, SQLException, IOException {
 
-   
-    	 int port = 5008;
+    	
+    	 int port = 5011;
     	 String packName=new String();
          ServerSocket serverSocket = new ServerSocket(port);
          while(true)
@@ -40,11 +40,14 @@ public class execution {
     	String message="";
     	ExecuteCommand ec  = new ExecuteCommand();
     	String pid=ec.command("adb shell pidof "+pack);
-    	
+    	pid = pid.replaceAll("\\n", "");
     	String log_content =  ec.command("cmd /c adb logcat -d > C:\\Users\\akash\\Desktop\\log_capture.txt");
     	
     	Path path = Paths.get("C:\\Users\\akash\\Desktop\\log_capture.txt");
-    	String match=""+pid+" "+pid;
+    	String space=" ";
+    	String match=pid+space+pid;
+    	
+    	//System.out.println(match);
     	List stringList = getLinesThatContain(path,match);
     	
     	for (int i = 0; i < stringList.size(); i++) {
@@ -53,7 +56,11 @@ public class execution {
         
         
         ObjectOutputStream os=new ObjectOutputStream(socket.getOutputStream());
-        os.writeObject(log_content);
+        if(stringList!=null)
+        {
+        	os.writeObject("Log Contents Leaked from App");
+        }
+        
         os.flush();
       	
     }
@@ -64,9 +71,10 @@ public class execution {
 
         try(Stream<String> stream = Files.lines(path)){
             // Filtering logic here
+        	
              filteredList = stream.filter(line -> line.contains(match))
                                   .collect(Collectors.toList());
-
+             System.out.println(filteredList);
         } catch (IOException ioe) {
             // exception handling here
         }

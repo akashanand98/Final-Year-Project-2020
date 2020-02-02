@@ -58,7 +58,7 @@ public class ApkInfo extends Activity {
     private static BufferedReader br;
     private static PrintWriter pw;
     private static ObjectOutputStream os;
-    private static String ip="192.168.0.105";
+    private static String ip="192.168.0.103";
     private static String inet="";
     String mess;
 
@@ -219,7 +219,7 @@ public class ApkInfo extends Activity {
             {
                 // String mess="helllooo";
 
-                s=new Socket(ip,5008);
+                s=new Socket(ip,5011);
                 os=new ObjectOutputStream(s.getOutputStream());
                 os.writeObject(packName);
                 os.flush();
