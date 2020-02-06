@@ -5,6 +5,7 @@ import java.io.InputStreamReader;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.PrintWriter;
+import java.io.Serializable;
 import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -12,10 +13,13 @@ import java.net.UnknownHostException;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 import com.example.myapplication.AppData;
+import com.mikhaellopez.circularprogressbar.CircularProgressBar;
+
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.ComponentName;
@@ -29,6 +33,7 @@ import android.content.pm.PackageManager;
 import android.content.pm.ProviderInfo;
 import android.content.pm.ResolveInfo;
 import android.content.pm.ServiceInfo;
+import android.graphics.Color;
 import android.net.Uri;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
@@ -43,13 +48,15 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import kotlin.Unit;
+
 public class ApkInfo extends Activity {
     PackageManager packageManager;
     TextView appLabel, packageName, version, features,result;
-    TextView permissions, andVersion, installed, lastModify, path;
+    TextView permissions, andVersion, installed, lastModify, path,int_spoof;
     PackageInfo packageInfo;
-    Button uninstall,sp,enc,leak;
-    String apName, packName, ver, andVer, ins, lmod, pth;
+    Button uninstall,sp,enc,leak,intent;
+    String apName, packName, andVer, ins, lmod, pth;
 
     //socket kaga
     private static Socket s;
@@ -58,23 +65,29 @@ public class ApkInfo extends Activity {
     private static BufferedReader br;
     private static PrintWriter pw;
     private static ObjectOutputStream os;
-    private static String ip="192.168.0.103";
+    private static String ip="192.168.0.102";
     private static String inet="";
+    private int spoof_count=0;
+    private static int total_act;
     String mess;
+    String code;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.apkinfo);
 
+        //circularProgressBar();
+
 
         packageInfo = AppData.getPackageInfo();
         apName = getPackageManager().getApplicationLabel(packageInfo.applicationInfo).toString();
         packName = packageInfo.packageName;
-        ver = packageInfo.versionName;
+
         andVer = Integer.toString(packageInfo.applicationInfo.targetSdkVersion);
         pth = packageInfo.applicationInfo.sourceDir;
         result=findViewById(R.id.result);
+        int_spoof=findViewById(R.id.int_spoof);
         try {
             inet=getLocalIpAddress();
         } catch (UnknownHostException e) {
@@ -82,13 +95,24 @@ public class ApkInfo extends Activity {
         }
         Log.v("inet",inet);
 
+
+
         //ACTIVITIES INFO
         try {
             ActivityInfo[] list = getPackageManager().getPackageInfo(packName,PackageManager.GET_ACTIVITIES).activities;
            for(ActivityInfo a:list) {
-               System.out.println(a.toString());
+               System.out.println(a.toString()+"xxxxx");
                System.out.println(a.permission);
                System.out.println(a.exported);
+               Log.v("permissions",list.toString());
+               Log.v("permissions_exp",a.exported+"");
+               if(a.exported==true)
+               {
+                   spoof_count++;
+
+               }
+               total_act=list.length;
+               Log.v("spoof",spoof_count+"");
 
            }
         } catch (PackageManager.NameNotFoundException e) {
@@ -147,7 +171,7 @@ public class ApkInfo extends Activity {
 
 
         ins = setDateFormat(packageInfo.firstInstallTime);
-        lmod = setDateFormat(packageInfo.lastUpdateTime);
+        //lmod = setDateFormat(packageInfo.lastUpdateTime);
 
 
 
@@ -158,6 +182,10 @@ public class ApkInfo extends Activity {
         sp=findViewById(R.id.sp);
         enc=findViewById(R.id.enc);
         leak=findViewById(R.id.leak);
+
+        intent=findViewById(R.id.intent);
+
+
 
         uninstall.setOnClickListener(new View.OnClickListener() {
 
@@ -175,7 +203,7 @@ public class ApkInfo extends Activity {
         sp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                code="M1";
                 sendPackageNames();
             }
 
@@ -184,6 +212,7 @@ public class ApkInfo extends Activity {
         enc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                code="M2";
                 sendPackageNames();
             }
         });
@@ -191,11 +220,20 @@ public class ApkInfo extends Activity {
         leak.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                code="M3";
                 sendPackageNames();
             }
         });
 
+        intent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                float per=(((float)spoof_count/(float)total_act));
 
+                Log.v("per",per+"");
+                int_spoof.setText("Vulnerable Permissions : "+spoof_count+"\n Total Permissions :"+total_act+"\n Percentage of vulnerable activities :"+per*100+"");
+            }
+        });
 
 
         findViewsById();
@@ -203,11 +241,60 @@ public class ApkInfo extends Activity {
 
     }
 
+
+//    public void circularProgressBar()
+//    {
+//        CircularProgressBar circularProgressBar = findViewById(R.id.circularProgressBar);
+//// Set Progress
+//        circularProgressBar.setProgress(65f);
+//// or with animation
+//        circularProgressBar.setProgressWithAnimation(65f, 1000l); // =1s
+//
+//// Set Progress Max
+//        circularProgressBar.setProgressMax(200f);
+//
+//// Set ProgressBar Color
+//        circularProgressBar.setProgressBarColor(Color.BLACK);
+//// or with gradient
+//        circularProgressBar.setProgressBarColorStart(Color.GRAY);
+//        circularProgressBar.setProgressBarColorEnd(Color.RED);
+//        circularProgressBar.setProgressBarColorDirection(CircularProgressBar.GradientDirection.TOP_TO_BOTTOM);
+//
+//// Set background ProgressBar Color
+//        circularProgressBar.setBackgroundProgressBarColor(Color.GRAY);
+//// or with gradient
+//        circularProgressBar.setBackgroundProgressBarColorStart(Color.WHITE);
+//        circularProgressBar.setBackgroundProgressBarColorEnd(Color.RED);
+//        circularProgressBar.setBackgroundProgressBarColorDirection(CircularProgressBar.GradientDirection.TOP_TO_BOTTOM);
+//
+//// Set Width
+//        circularProgressBar.setProgressBarWidth(7f); // in DP
+//        circularProgressBar.setBackgroundProgressBarWidth(3f); // in DP
+//
+//// Other
+//        circularProgressBar.setRoundBorder(true);
+//        circularProgressBar.setStartAngle(180f);
+//        circularProgressBar.setProgressDirection(CircularProgressBar.ProgressDirection.TO_RIGHT);
+//
+//
+//
+//    }
+
     public void sendPackageNames()
     {
         myTask mt=new myTask();
         mt.execute();
     }
+
+//    class data implements Serializable
+//    {
+//        private static final long serialVersionUID = 1234;
+//        String packageName_data, code_data;
+//        public data(String x, String y) {
+//            this.packageName_data = x;
+//            this.code_data = y;
+//        }
+//    }
 
 
     class myTask extends AsyncTask<Void,Void,Void>
@@ -221,10 +308,13 @@ public class ApkInfo extends Activity {
 
                 s=new Socket(ip,5011);
                 os=new ObjectOutputStream(s.getOutputStream());
-                os.writeObject(packName);
+                List<String> values=new ArrayList<String>();
+                values.add(packName);
+                values.add(code);
+                os.writeObject(values);
                 os.flush();
 
-                Thread.sleep(2000);
+                Thread.sleep(1000);
 
                 ObjectInputStream is = new ObjectInputStream(s.getInputStream());;
                 mess=(String) is.readObject();
@@ -274,13 +364,13 @@ public class ApkInfo extends Activity {
 
         appLabel = (TextView) findViewById(R.id.applabel);
         packageName = (TextView) findViewById(R.id.package_name);
-        version = (TextView) findViewById(R.id.version_name);
-        features = (TextView) findViewById(R.id.req_feature);
-        permissions = (TextView) findViewById(R.id.req_permission);
+       // version = (TextView) findViewById(R.id.version_name);
+        //features = (TextView) findViewById(R.id.req_feature);
+        //paaru//permissions = (TextView) findViewById(R.id.req_permission);
         andVersion = (TextView) findViewById(R.id.andversion);
         path = (TextView) findViewById(R.id.path);
         installed = (TextView) findViewById(R.id.insdate);
-        lastModify = (TextView) findViewById(R.id.last_modify);
+        //lastModify = (TextView) findViewById(R.id.last_modify);
     }
 
     private void setValues() {
@@ -291,8 +381,6 @@ public class ApkInfo extends Activity {
         // package name
         packageName.setText(packName);
 
-        // version name
-        version.setText(ver);
 
         // target version
         andVersion.setText(andVer);
@@ -304,20 +392,20 @@ public class ApkInfo extends Activity {
         installed.setText(ins);
 
         // last modified
-        lastModify.setText(lmod);
+       // lastModify.setText(lmod);
 
         // features
-        if (packageInfo.reqFeatures != null)
-            features.setText(getFeatures(packageInfo.reqFeatures));
-        else
-            features.setText("-");
-
-        // uses-permission
-        if (packageInfo.requestedPermissions != null)
-            permissions
-                    .setText(getPermissions(packageInfo.requestedPermissions));
-        else
-            permissions.setText("-");
+//        if (packageInfo.reqFeatures != null)
+//            features.setText(getFeatures(packageInfo.reqFeatures));
+//        else
+//            features.setText("-");
+//
+//        // uses-permission
+//        if (packageInfo.requestedPermissions != null)
+//            permissions
+//                    .setText(getPermissions(packageInfo.requestedPermissions));
+//        else
+//            permissions.setText("-");
     }
 
     @SuppressLint("SimpleDateFormat")

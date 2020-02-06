@@ -7,6 +7,7 @@ INJECTED from C:\Users\akash\Documents\GitHub\Final-Year-Project-2020\MyApplicat
 MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\akash\.gradle\caches\transforms-2\files-2.1\8a90935574f82694cec42fb7c78743b1\appcompat-1.0.2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core-ktx:1.0.2] C:\Users\akash\.gradle\caches\transforms-2\files-2.1\76e8d8e10a0e1f55e5e9a72270e98375\core-ktx-1.0.2\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\akash\.gradle\caches\transforms-2\files-2.1\c4ef5ca596413fc5b60e6754465386ae\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
+MERGED from [com.mikhaellopez:circularprogressbar:3.0.3] C:\Users\akash\.gradle\caches\transforms-2\files-2.1\a92f788b35733b5a212d0a89212eeefd\circularprogressbar-3.0.3\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\akash\.gradle\caches\transforms-2\files-2.1\5036e040bfb2ed21141db5907dc80a84\fragment-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\akash\.gradle\caches\transforms-2\files-2.1\17a5aaf00c7b911ced147a44b861d49d\vectordrawable-animated-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\akash\.gradle\caches\transforms-2\files-2.1\564388c32085138c359dac6cb7f3f8e1\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -115,6 +116,8 @@ MERGED from [androidx.core:core-ktx:1.0.2] C:\Users\akash\.gradle\caches\transfo
 MERGED from [androidx.core:core-ktx:1.0.2] C:\Users\akash\.gradle\caches\transforms-2\files-2.1\76e8d8e10a0e1f55e5e9a72270e98375\core-ktx-1.0.2\AndroidManifest.xml:5:5-44
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\akash\.gradle\caches\transforms-2\files-2.1\c4ef5ca596413fc5b60e6754465386ae\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\akash\.gradle\caches\transforms-2\files-2.1\c4ef5ca596413fc5b60e6754465386ae\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [com.mikhaellopez:circularprogressbar:3.0.3] C:\Users\akash\.gradle\caches\transforms-2\files-2.1\a92f788b35733b5a212d0a89212eeefd\circularprogressbar-3.0.3\AndroidManifest.xml:7:5-9:41
+MERGED from [com.mikhaellopez:circularprogressbar:3.0.3] C:\Users\akash\.gradle\caches\transforms-2\files-2.1\a92f788b35733b5a212d0a89212eeefd\circularprogressbar-3.0.3\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\akash\.gradle\caches\transforms-2\files-2.1\5036e040bfb2ed21141db5907dc80a84\fragment-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\akash\.gradle\caches\transforms-2\files-2.1\5036e040bfb2ed21141db5907dc80a84\fragment-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\akash\.gradle\caches\transforms-2\files-2.1\17a5aaf00c7b911ced147a44b861d49d\vectordrawable-animated-1.0.0\AndroidManifest.xml:20:5-44
