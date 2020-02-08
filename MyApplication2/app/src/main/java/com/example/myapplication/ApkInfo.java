@@ -65,7 +65,7 @@ public class ApkInfo extends Activity {
     private static BufferedReader br;
     private static PrintWriter pw;
     private static ObjectOutputStream os;
-    private static String ip="192.168.0.104";
+    private static String ip="192.168.43.214";
     private static String inet="";
     private int spoof_count=0;
     private static int total_act;
@@ -231,7 +231,7 @@ public class ApkInfo extends Activity {
                 float per=(((float)spoof_count/(float)total_act));
 
                 Log.v("per",per+"");
-                int_spoof.setText("Vulnerable Permissions : "+spoof_count+"\n Total Permissions :"+total_act+"\n Percentage of vulnerable activities :"+per*100+"");
+                int_spoof.setText("Vulnerable Permissions : "+spoof_count+"\n Total Permissions :"+total_act+"\n Percentage of vulnerable activities :"+per*100+"%");
             }
         });
 
