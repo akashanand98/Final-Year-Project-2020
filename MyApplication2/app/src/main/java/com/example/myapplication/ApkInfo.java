@@ -45,6 +45,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -68,6 +69,7 @@ public class ApkInfo extends Activity {
     private static String ip="192.168.43.214";
     private static String inet="";
     private int spoof_count=0;
+    private int progress=0;
     private static int total_act;
     String mess;
     String code;
@@ -79,7 +81,8 @@ public class ApkInfo extends Activity {
 
         //circularProgressBar();
 
-
+        final ProgressBar progressBar = (ProgressBar) findViewById(R.id.circle_progress_bar);
+       // progressBar.setProgress(75);
         packageInfo = AppData.getPackageInfo();
         apName = getPackageManager().getApplicationLabel(packageInfo.applicationInfo).toString();
         packName = packageInfo.packageName;
@@ -230,7 +233,14 @@ public class ApkInfo extends Activity {
             public void onClick(View view) {
                 float per=(((float)spoof_count/(float)total_act));
 
+                if ( (per*100) >= 50.0)
+                {
+
+                    progress+=25;
+                }
+                Log.v("prog",progress+"");
                 Log.v("per",per+"");
+                progressBar.setProgress(progress);
                 int_spoof.setText("Vulnerable Permissions : "+spoof_count+"\n Total Permissions :"+total_act+"\n Percentage of vulnerable activities :"+per*100+"%");
             }
         });
@@ -238,6 +248,7 @@ public class ApkInfo extends Activity {
 
         findViewsById();
         setValues();
+
 
     }
 

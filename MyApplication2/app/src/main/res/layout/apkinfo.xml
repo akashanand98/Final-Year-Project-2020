@@ -237,6 +237,8 @@
             android:paddingLeft="24dp"
             android:text="Intent Spoofing" />
 
+
+
         <TextView
             android:id="@+id/result"
             android:layout_width="wrap_content"
@@ -264,18 +266,31 @@
             android:paddingLeft="24dp"
             android:textSize="15dp" />
 
-        <!-- to be corrected -->
-<!--        <com.mikhaellopez.circularprogressbar.CircularProgressBar-->
-<!--            android:id="@+id/circularProgressBar"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_below="@+id/intent"-->
-<!--            app:cpb_background_progressbar_color="#b6bbd8"-->
-<!--            app:cpb_background_progressbar_width="5dp"-->
-<!--            app:cpb_progress_direction="to_right"-->
-<!--            app:cpb_progressbar_color="#3f51b5"-->
-<!--            app:cpb_progressbar_width="10dp"-->
-<!--            app:cpb_round_border="false" />-->
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="1300dp"
+            android:layout_marginRight="200dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="100"
+            android:progressDrawable="@drawable/circle_progress_background" />
+
+        <ProgressBar
+            android:id="@+id/circle_progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="200dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progressDrawable="@drawable/circle_progress_foreground"
+            android:rotation="-90" />
+
 
 
     </RelativeLayout>

@@ -32,8 +32,8 @@ public final class R {
     public static final class dimen {
         private dimen() {}
 
-        public static final int default_background_stroke_width = 0x7f050052;
-        public static final int default_stroke_width = 0x7f050053;
+        public static final int default_background_stroke_width = 0x7f050057;
+        public static final int default_stroke_width = 0x7f050058;
     }
     public static final class styleable {
         private styleable() {}
