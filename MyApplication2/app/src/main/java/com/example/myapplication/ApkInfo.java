@@ -66,7 +66,7 @@ public class ApkInfo extends Activity {
     private static BufferedReader br;
     private static PrintWriter pw;
     private static ObjectOutputStream os;
-    private static String ip="192.168.43.214";
+    private static String ip="192.168.0.107";
     private static String inet="";
     private int spoof_count=0;
     private int progress=0;
@@ -317,7 +317,7 @@ public class ApkInfo extends Activity {
             {
                 // String mess="helllooo";
 
-                s=new Socket(ip,5011);
+                s=new Socket(ip,8011);
                 os=new ObjectOutputStream(s.getOutputStream());
                 List<String> values=new ArrayList<String>();
                 values.add(packName);

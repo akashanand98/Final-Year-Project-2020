@@ -16,7 +16,7 @@ import java.util.List;
 
 public class server_execution {
 	
-	static int port = 5011;
+	static int port = 8011;
 	static ServerSocket serverSocket; 
 	static Socket socket;
 	
@@ -43,8 +43,8 @@ public class server_execution {
                 tmp = (List<String>)is.readObject();
                 packName=tmp.get(0);
                 code=tmp.get(1);
-                System.out.println(packName);
-                System.out.println(code);
+               // System.out.println(packName);
+               // System.out.println(code);
                 
                 
                 switch(code)
@@ -165,7 +165,7 @@ public class server_execution {
                 fr.read(buffer, 0, 16);
                 String str = String.valueOf(buffer);
                 fr.close();
-                System.out.println(str);
+                //System.out.println(str);
 
                 return str.equals("SQLite format 3\u0000");
 
