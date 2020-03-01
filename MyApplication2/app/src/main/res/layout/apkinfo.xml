@@ -6,7 +6,7 @@
 
     <RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="700dp">
+        android:layout_height="fill_parent">
 
         <TextView
             android:id="@+id/vul"
@@ -59,44 +59,44 @@
             android:paddingLeft="24dp"
             android:textSize="15dp"/>
 
-<!--        <TextView-->
-<!--            android:id="@+id/version"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_below="@+id/package_name"-->
-<!--            android:layout_marginLeft="18dp"-->
-<!--            android:layout_marginTop="15dp"-->
-<!--            android:text="@string/version"-->
-<!--            android:textStyle="bold"-->
-<!--            android:textSize="15dp"/>-->
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/package_name"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/version"
+            android:textStyle="bold"
+            android:textSize="15dp"/>
 
-<!--        <TextView-->
-<!--            android:id="@+id/version_name"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_below="@+id/version"-->
-<!--            android:paddingLeft="24dp"-->
-<!--            android:textSize="15dp"/>-->
-
-
-
-<!--        <TextView-->
-<!--            android:id="@+id/req_feature"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_below="@+id/features"-->
-<!--            android:paddingLeft="24dp"-->
-<!--            android:textSize="15dp"/>-->
+        <TextView
+            android:id="@+id/version_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/package_name"
+            android:paddingLeft="24dp"
+            android:textSize="15dp"/>
 
 
 
-<!--        <TextView-->
-<!--            android:id="@+id/req_permission"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_below="@+id/permissions"-->
-<!--            android:paddingLeft="24dp"-->
-<!--            android:textSize="15dp"/>-->
+        <TextView
+            android:id="@+id/req_feature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/version_name"
+            android:paddingLeft="24dp"
+            android:textSize="15dp"/>
+
+
+
+        <TextView
+            android:id="@+id/req_permission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/req_feature"
+            android:paddingLeft="24dp"
+            android:textSize="15dp"/>
 
         <TextView
             android:id="@+id/path_info"
@@ -155,101 +155,30 @@
             android:paddingLeft="24dp"
             android:textSize="15dp"/>
 
-<!--        <TextView-->
-<!--            android:id="@+id/modified"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_below="@+id/insdate"-->
-<!--            android:layout_marginLeft="18dp"-->
-<!--            android:layout_marginTop="27dp"-->
-<!--            android:text="@string/modified"-->
-<!--            android:textStyle="bold"-->
-<!--            android:textSize="15dp"/>-->
 
-<!--        <TextView-->
-<!--            android:id="@+id/last_modify"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_below="@+id/modified"-->
-<!--            android:paddingLeft="24dp"-->
-<!--            />-->
 
-        <Button
-            android:id="@+id/uninstall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/insdate"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginEnd="180dp"
-            android:layout_marginRight="34dp"
-            android:paddingLeft="24dp"
-            android:text="Uninstall" />
+
 
         <Button
             android:id="@+id/sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/uninstall"
+            android:layout_below="@+id/insdate"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_marginEnd="248dp"
             android:layout_marginRight="248dp"
             android:paddingLeft="24dp"
-            android:text="Insecure Storage Check" />
-
-        <Button
-            android:id="@+id/enc"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/sp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="248dp"
-            android:layout_marginRight="248dp"
-            android:paddingLeft="24dp"
-            android:text="Encrypted file Check" />
-
-        <Button
-            android:id="@+id/leak"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/enc"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="248dp"
-            android:layout_marginRight="248dp"
-            android:paddingLeft="24dp"
-            android:text="Data Leakage Check" />
-
-        <Button
-            android:id="@+id/intent"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/leak"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="248dp"
-            android:layout_marginRight="248dp"
-            android:paddingLeft="24dp"
-            android:text="Intent Spoofing" />
-
+            android:text="Scan app for Vulnerabilities" />
 
 
         <TextView
             android:id="@+id/result"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/enc"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="150dp"
-            android:layout_marginEnd="14dp"
-            android:layout_marginRight="34dp"
-            android:paddingLeft="24dp"
+            android:layout_below="@+id/uninstall"
+
+
             android:textSize="15dp" />
 
 
@@ -272,7 +201,7 @@
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_centerVertical="true"
-            android:layout_marginTop="1300dp"
+            android:layout_marginTop="1000dp"
             android:layout_marginRight="200dp"
             android:indeterminate="false"
             android:max="100"

@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TableLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TableRow
+
+            >
+
+            <TextView
+                android:id="@+id/a1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textStyle="bold"
+
+                />
+
+        </TableRow>
+
+        <TableRow android:padding="5dip"
+
+            android:layout_weight="3">
+
+            <TextView
+
+                android:background="#DAE8FC"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:text="Vulnerability"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <TextView
+                android:background="@drawable/table_row_last_bg"
+                android:id="@+id/r1c1"
+                android:layout_weight="3"
+                android:ellipsize="end"
+                android:layout_column="0"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_horizontal"
+
+                />
+
+
+
+        </TableRow>
+        <TableRow android:padding="5dip"
+
+            android:layout_weight="3">
+
+            <TextView
+                android:background="#DAE8FC"
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:text="Status"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <TextView
+                android:background="@drawable/table_row_last_bg"
+                android:id="@+id/r1c2"
+                android:layout_weight="3"
+                android:ellipsize="end"
+                android:layout_column="0"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_horizontal"
+
+                />
+
+
+
+        </TableRow>
+        <TableRow android:padding="5dip"
+
+            android:layout_weight="3">
+
+            <TextView
+                android:background="#DAE8FC"
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:text="Remarks"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <TextView
+                android:background="@drawable/table_row_last_bg"
+                android:id="@+id/r1c3"
+                android:layout_weight="3"
+                android:ellipsize="end"
+                android:layout_column="0"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_horizontal"
+
+                />
+
+
+
+        </TableRow>
+
+
+        <TableRow
+            >
+
+            <TextView
+                android:id="@+id/a2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textStyle="bold"
+
+                />
+
+        </TableRow>
+
+        <TableRow android:padding="5dip"
+
+            android:layout_weight="3">
+
+            <TextView
+                android:background="#DAE8FC"
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:text="Vulnerability"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <TextView
+                android:background="@drawable/table_row_last_bg"
+                android:id="@+id/r2c1"
+                android:layout_weight="3"
+                android:ellipsize="end"
+                android:layout_column="0"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_horizontal"
+
+                />
+
+
+
+        </TableRow>
+        <TableRow android:padding="5dip"
+
+            android:layout_weight="3">
+
+            <TextView
+                android:background="#DAE8FC"
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:text="Status"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <TextView
+                android:background="@drawable/table_row_last_bg"
+                android:id="@+id/r2c2"
+                android:layout_weight="3"
+                android:ellipsize="end"
+                android:layout_column="0"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_horizontal"
+
+                />
+
+
+
+        </TableRow>
+        <TableRow android:padding="5dip"
+
+            android:layout_weight="3">
+
+            <TextView
+                android:background="#DAE8FC"
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:text="Remarks"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <TextView
+                android:background="@drawable/table_row_last_bg"
+                android:id="@+id/r2c3"
+                android:layout_weight="3"
+                android:ellipsize="end"
+                android:layout_column="0"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_horizontal"
+
+                />
+
+
+
+        </TableRow>
+
+        <TableRow
+            >
+
+            <TextView
+                android:id="@+id/a3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textStyle="bold"
+
+                />
+
+        </TableRow>
+
+        <TableRow android:padding="5dip"
+
+            android:layout_weight="3">
+
+            <TextView
+                android:background="#DAE8FC"
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:text="Vulnerability"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <TextView
+                android:background="@drawable/table_row_last_bg"
+                android:id="@+id/r3c1"
+                android:layout_weight="3"
+                android:ellipsize="end"
+                android:layout_column="0"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_horizontal"
+
+                />
+
+
+
+        </TableRow>
+        <TableRow android:padding="5dip"
+
+            android:layout_weight="3">
+
+            <TextView
+                android:background="#DAE8FC"
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:text="Status"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <TextView
+                android:background="@drawable/table_row_last_bg"
+                android:id="@+id/r3c2"
+                android:layout_weight="3"
+                android:ellipsize="end"
+                android:layout_column="0"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_horizontal"
+
+                />
+
+
+
+        </TableRow>
+        <TableRow android:padding="5dip"
+
+            android:layout_weight="3">
+
+            <TextView
+                android:background="#DAE8FC"
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:text="Remarks"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <TextView
+                android:background="@drawable/table_row_last_bg"
+                android:id="@+id/r3c3"
+                android:layout_weight="3"
+                android:ellipsize="end"
+                android:layout_column="0"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_horizontal"
+
+                />
+
+
+
+        </TableRow>
+
+        <TableRow
+            >
+
+            <TextView
+                android:id="@+id/a4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textStyle="bold"
+
+                />
+
+        </TableRow>
+
+        <TableRow android:padding="5dip"
+
+            android:layout_weight="3">
+
+            <TextView
+                android:background="#DAE8FC"
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:text="Vulnerability"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <TextView
+                android:background="@drawable/table_row_last_bg"
+                android:id="@+id/r4c1"
+                android:layout_weight="3"
+                android:ellipsize="end"
+                android:layout_column="0"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_horizontal"
+
+                />
+
+
+
+        </TableRow>
+        <TableRow android:padding="5dip"
+
+            android:layout_weight="3">
+
+            <TextView
+                android:background="#DAE8FC"
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:text="Status"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <TextView
+                android:background="@drawable/table_row_last_bg"
+                android:id="@+id/r4c2"
+                android:layout_weight="3"
+                android:ellipsize="end"
+                android:layout_column="0"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_horizontal"
+
+                />
+
+
+
+        </TableRow>
+        <TableRow android:padding="5dip"
+
+            android:layout_weight="3">
+
+            <TextView
+                android:background="#DAE8FC"
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:text="Remarks"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <TextView
+                android:background="@drawable/table_row_last_bg"
+                android:id="@+id/r4c3"
+                android:layout_weight="3"
+                android:ellipsize="end"
+                android:layout_column="0"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_horizontal"
+
+                />
+
+
+
+        </TableRow>
+
+        <TableRow
+            >
+
+            <TextView
+                android:id="@+id/a5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textStyle="bold"
+
+                />
+
+        </TableRow>
+
+        <TableRow android:padding="5dip"
+
+            android:layout_weight="3">
+
+            <TextView
+                android:background="#DAE8FC"
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:text="Vulnerability"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <TextView
+                android:background="@drawable/table_row_last_bg"
+                android:id="@+id/r5c1"
+                android:layout_weight="3"
+                android:ellipsize="end"
+                android:layout_column="0"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_horizontal"
+
+                />
+
+
+
+        </TableRow>
+        <TableRow android:padding="5dip"
+
+            android:layout_weight="3">
+
+            <TextView
+                android:background="#DAE8FC"
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:text="Status"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <TextView
+                android:background="@drawable/table_row_last_bg"
+                android:id="@+id/r5c2"
+                android:layout_weight="3"
+                android:ellipsize="end"
+                android:layout_column="0"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_horizontal"
+
+                />
+
+
+
+        </TableRow>
+        <TableRow android:padding="5dip"
+
+            android:layout_weight="3">
+
+            <TextView
+                android:background="#DAE8FC"
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:text="Remarks"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <TextView
+                android:background="@drawable/table_row_last_bg"
+                android:id="@+id/r5c3"
+                android:layout_weight="3"
+                android:ellipsize="end"
+                android:layout_column="0"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_horizontal"
+
+                />
+
+
+
+        </TableRow>
+        <Button
+            android:id="@+id/uninstall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp"
+
+            android:text="Uninstall" />
+    </TableLayout>
+
+
+
+</ScrollView>

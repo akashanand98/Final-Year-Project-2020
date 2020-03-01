@@ -16,14 +16,7 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.Button;
 import android.widget.ListView;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.ObjectOutputStream;
-import java.io.PrintWriter;
-import java.net.ServerSocket;
-import java.net.Socket;
-import java.net.UnknownHostException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -34,14 +27,8 @@ public class ApkListActivity extends Activity
     ListView apkList;
     List<PackageInfo> packageList1;
     List<String> packageNameList;
-    private static Socket s;
-    private static ServerSocket ss;
-    private static InputStreamReader isr;
-    private static BufferedReader br;
-    private static PrintWriter pw;
-    private static ObjectOutputStream os;
-    private static String ip="192.168.0.107";
-    Button send;
+
+
 
 
     @Override
@@ -77,69 +64,10 @@ public class ApkListActivity extends Activity
 
         apkList.setOnItemClickListener(this);
 
-//        send=findViewById(R.id.send);
-//        send.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                sendPackageNames(packageList1);
-//            }
-//        });
+
 
 
     }
-
-
-    public void sendPackageNames(List<PackageInfo> pkg)
-    {
-        myTask mt=new myTask();
-        mt.execute();
-    }
-
-
-    class myTask extends AsyncTask<Void,Void,Void>
-    {
-        protected Void doInBackground(Void... params)
-        {
-            try
-            {
-               // String mess="helllooo";
-
-                s=new Socket(ip,5005);
-                //pw=new PrintWriter(s.getOutputStream());
-                os=new ObjectOutputStream(s.getOutputStream());
-                os.writeObject(packageNameList);
-                os.flush();
-                os.close();
-//                for(String i:packageNameList)
-//                {
-//                    pw.write(i);
-//                    pw.flush();
-//                }
-
-
-
-                //pw.close();
-                s.close();
-
-
-
-
-            } catch (UnknownHostException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        return null;
-        }
-    }
-    /**
-     * Return whether the given PackgeInfo represents a system package or not.
-     * User-installed packages (Market or otherwise) should not be denoted as
-     * system packages.
-     *
-     * @param pkgInfo
-     * @return boolean
-     */
 
 
 

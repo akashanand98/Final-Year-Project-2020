@@ -42,14 +42,14 @@ public final class R {
     public static final class id {
         private id() {}
 
-        public static final int activity_cardinal_bird = 0x7f070019;
-        public static final int circle_progress_bar = 0x7f070031;
-        public static final int compliance_curved_text = 0x7f070035;
-        public static final int compliance_layout = 0x7f070036;
-        public static final int compliance_observations = 0x7f070037;
-        public static final int compliance_observed_compliance = 0x7f070038;
-        public static final int compliance_percentage = 0x7f070039;
-        public static final int compliance_total_count = 0x7f07003a;
+        public static final int activity_cardinal_bird = 0x7f07001e;
+        public static final int circle_progress_bar = 0x7f070036;
+        public static final int compliance_curved_text = 0x7f07003a;
+        public static final int compliance_layout = 0x7f07003b;
+        public static final int compliance_observations = 0x7f07003c;
+        public static final int compliance_observed_compliance = 0x7f07003d;
+        public static final int compliance_percentage = 0x7f07003e;
+        public static final int compliance_total_count = 0x7f07003f;
     }
     public static final class layout {
         private layout() {}
