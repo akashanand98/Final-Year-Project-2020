@@ -20,25 +20,25 @@
 13-->C:\Users\akash\Downloads\MyApplication2-sun\MyApplication2\app\src\main\AndroidManifest.xml:7:5-79
 13-->C:\Users\akash\Downloads\MyApplication2-sun\MyApplication2\app\src\main\AndroidManifest.xml:7:22-77
 14    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
-14-->C:\Users\akash\Downloads\MyApplication2-sun\MyApplication2\app\src\main\AndroidManifest.xml:40:5-82
-14-->C:\Users\akash\Downloads\MyApplication2-sun\MyApplication2\app\src\main\AndroidManifest.xml:40:22-79
+14-->C:\Users\akash\Downloads\MyApplication2-sun\MyApplication2\app\src\main\AndroidManifest.xml:42:5-82
+14-->C:\Users\akash\Downloads\MyApplication2-sun\MyApplication2\app\src\main\AndroidManifest.xml:42:22-79
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->C:\Users\akash\Downloads\MyApplication2-sun\MyApplication2\app\src\main\AndroidManifest.xml:41:5-66
-15-->C:\Users\akash\Downloads\MyApplication2-sun\MyApplication2\app\src\main\AndroidManifest.xml:41:22-64
+15-->C:\Users\akash\Downloads\MyApplication2-sun\MyApplication2\app\src\main\AndroidManifest.xml:43:5-66
+15-->C:\Users\akash\Downloads\MyApplication2-sun\MyApplication2\app\src\main\AndroidManifest.xml:43:22-64
 16
 17    <application
-17-->C:\Users\akash\Downloads\MyApplication2-sun\MyApplication2\app\src\main\AndroidManifest.xml:8:5-39:19
+17-->C:\Users\akash\Downloads\MyApplication2-sun\MyApplication2\app\src\main\AndroidManifest.xml:8:5-41:19
 18        android:allowBackup="true"
 18-->C:\Users\akash\Downloads\MyApplication2-sun\MyApplication2\app\src\main\AndroidManifest.xml:10:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->[androidx.core:core:1.0.2] C:\Users\akash\.gradle\caches\transforms-2\files-2.1\4c11edde0e8743f1e03fb17544729eec\core-1.0.2\AndroidManifest.xml:22:18-86
+19-->[androidx.core:core:1.1.0] C:\Users\akash\.gradle\caches\transforms-2\files-2.1\e9d267c39890385adcadf7222b957ff3\core-1.1.0\AndroidManifest.xml:24:18-86
 20        android:debuggable="true"
 21        android:icon="@mipmap/ic_launcher"
 21-->C:\Users\akash\Downloads\MyApplication2-sun\MyApplication2\app\src\main\AndroidManifest.xml:11:9-43
 22        android:label="@string/app_name"
 22-->C:\Users\akash\Downloads\MyApplication2-sun\MyApplication2\app\src\main\AndroidManifest.xml:12:9-41
-23        android:roundIcon="@mipmap/ic_launcher_foreground"
-23-->C:\Users\akash\Downloads\MyApplication2-sun\MyApplication2\app\src\main\AndroidManifest.xml:13:9-59
+23        android:roundIcon="@mipmap/ic_launcher_round"
+23-->C:\Users\akash\Downloads\MyApplication2-sun\MyApplication2\app\src\main\AndroidManifest.xml:13:9-54
 24        android:supportsRtl="true"
 24-->C:\Users\akash\Downloads\MyApplication2-sun\MyApplication2\app\src\main\AndroidManifest.xml:14:9-35
 25        android:testOnly="true"
@@ -71,6 +71,9 @@
 40        <activity android:name="com.example.myapplication.ApkResult" />
 40-->C:\Users\akash\Downloads\MyApplication2-sun\MyApplication2\app\src\main\AndroidManifest.xml:30:9-31:66
 40-->C:\Users\akash\Downloads\MyApplication2-sun\MyApplication2\app\src\main\AndroidManifest.xml:31:13-63
-41    </application>
-42
-43</manifest>
+41        <activity android:name="com.example.myapplication.MainActivity" />
+41-->C:\Users\akash\Downloads\MyApplication2-sun\MyApplication2\app\src\main\AndroidManifest.xml:32:9-33:69
+41-->C:\Users\akash\Downloads\MyApplication2-sun\MyApplication2\app\src\main\AndroidManifest.xml:33:13-66
+42    </application>
+43
+44</manifest>

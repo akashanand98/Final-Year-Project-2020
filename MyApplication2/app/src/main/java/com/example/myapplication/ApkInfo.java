@@ -63,7 +63,7 @@ import kotlin.Unit;
 public class ApkInfo extends Activity {
     PackageManager packageManager;
     TextView appLabel, packageName, version, features,result;
-    TextView permissions, andVersion, installed, lastModify, path,int_spoof;
+    TextView permissions, andVersion, installed, path,int_spoof;
     PackageInfo packageInfo;
     Button uninstall,sp,enc,leak,intent,clipboard;
     String apName, packName, andVer, ins, finalResult, pth, spoofVul="No";
@@ -73,7 +73,7 @@ public class ApkInfo extends Activity {
     private static Socket s;
 
     private static ObjectOutputStream os;
-    private static String ip="192.168.0.107";
+    private static String ip="192.168.0.105";
 
     private int spoof_count=0;
     private int progress=0;
@@ -89,7 +89,7 @@ public class ApkInfo extends Activity {
 
         //circularProgressBar();
 
-        final ProgressBar progressBar = (ProgressBar) findViewById(R.id.circle_progress_bar);
+        //final ProgressBar progressBar = (ProgressBar) findViewById(R.id.circle_progress_bar);
         packageInfo = AppData.getPackageInfo();
         apName = getPackageManager().getApplicationLabel(packageInfo.applicationInfo).toString();
         packName = packageInfo.packageName;
@@ -228,7 +228,7 @@ public class ApkInfo extends Activity {
                 }
                 Log.v("prog",progress+"");
                 Log.v("per",percent+"");
-                progressBar.setProgress(progress);
+                //progressBar.setProgress(progress);
                 int_spoof.setText("Vulnerable Permissions : "+spoof_count+"\n Total Permissions :"+total_act+"\n Percentage of vulnerable activities :"+percent*100+"%");
 
 
@@ -287,10 +287,12 @@ public class ApkInfo extends Activity {
                 finalResult = mess+"\n"+spoofVul;
                 Log.v("Server Response",finalResult);
 
-                Intent intent = new Intent(getApplicationContext(), ApkResult.class);
+
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
 
                 intent.putExtra("result", finalResult);
                 intent.putExtra("pack",packName);
+
                 startActivity(intent);
 
 
@@ -314,7 +316,7 @@ public class ApkInfo extends Activity {
             super.onPostExecute(aVoid);
             result.setText(finalResult);
 
-            String vul[] = finalResult.split("\n");
+//            String vul[] = finalResult.split("\n");
 //            for(String v:vul)
 //            if(v.equalsIgnoreCase("yes"))
 //            {
@@ -341,7 +343,7 @@ public class ApkInfo extends Activity {
         appLabel = (TextView) findViewById(R.id.applabel);
         packageName = (TextView) findViewById(R.id.package_name);
         version = (TextView) findViewById(R.id.version_name);
-        features = (TextView) findViewById(R.id.req_feature);
+        features = (TextView) findViewById(R.id.req_permission);
         permissions = (TextView) findViewById(R.id.req_permission);
         andVersion = (TextView) findViewById(R.id.andversion);
         path = (TextView) findViewById(R.id.path);
@@ -408,6 +410,9 @@ public class ApkInfo extends Activity {
         }
         return features;
     }
+
+
+
 
 
 

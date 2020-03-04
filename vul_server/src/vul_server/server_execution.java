@@ -34,7 +34,7 @@ public class server_execution {
 				// Reading the message from the client
 				socket = serverSocket.accept();
 				ObjectInputStream is = new ObjectInputStream(socket.getInputStream());
-				;
+				
 
 				tmp = (List<String>) is.readObject();
 				packName = tmp.get(0);

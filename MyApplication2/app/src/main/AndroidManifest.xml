@@ -29,6 +29,8 @@
         </activity>
         <activity
             android:name="com.example.myapplication.ApkResult" />
+        <activity
+            android:name="com.example.myapplication.MainActivity" />
 
 
 

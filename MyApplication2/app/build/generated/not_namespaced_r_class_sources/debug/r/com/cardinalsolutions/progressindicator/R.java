@@ -12,64 +12,64 @@ public final class R {
     public static final class color {
         private color() {}
 
-        public static final int black = 0x7f04001e;
-        public static final int circleProgressCompleteEndGradient = 0x7f040027;
-        public static final int circleProgressCompleteStartGradient = 0x7f040028;
-        public static final int circleProgressIncompleteEndGradient = 0x7f040029;
-        public static final int circleProgressIncompleteStartGradient = 0x7f04002a;
-        public static final int coral_blue = 0x7f04002e;
-        public static final int dark_blue = 0x7f04002f;
-        public static final int light_gray = 0x7f04003a;
-        public static final int text_gray = 0x7f04005d;
-        public static final int white = 0x7f040060;
+        public static final int black = 0x7f05001e;
+        public static final int circleProgressCompleteEndGradient = 0x7f05002c;
+        public static final int circleProgressCompleteStartGradient = 0x7f05002d;
+        public static final int circleProgressIncompleteEndGradient = 0x7f05002e;
+        public static final int circleProgressIncompleteStartGradient = 0x7f05002f;
+        public static final int coral_blue = 0x7f050033;
+        public static final int dark_blue = 0x7f050034;
+        public static final int light_gray = 0x7f050065;
+        public static final int text_gray = 0x7f0500c7;
+        public static final int white = 0x7f0500ca;
     }
     public static final class dimen {
         private dimen() {}
 
-        public static final int circleProgressRadius = 0x7f05004b;
-        public static final int circleProgressThickness = 0x7f05004c;
-        public static final int curvedTextPadding = 0x7f050054;
-        public static final int curvedTextRadius = 0x7f050055;
-        public static final int curvedTextViewTextSize = 0x7f050056;
+        public static final int circleProgressRadius = 0x7f060053;
+        public static final int circleProgressThickness = 0x7f060054;
+        public static final int curvedTextPadding = 0x7f06005c;
+        public static final int curvedTextRadius = 0x7f06005d;
+        public static final int curvedTextViewTextSize = 0x7f06005e;
     }
     public static final class drawable {
         private drawable() {}
 
-        public static final int cardinal_bird = 0x7f060055;
-        public static final int circle_progress_background = 0x7f060056;
-        public static final int circle_progress_foreground = 0x7f060057;
+        public static final int cardinal_bird = 0x7f070067;
+        public static final int circle_progress_background = 0x7f070068;
+        public static final int circle_progress_foreground = 0x7f070069;
     }
     public static final class id {
         private id() {}
 
-        public static final int activity_cardinal_bird = 0x7f07001e;
-        public static final int circle_progress_bar = 0x7f070036;
-        public static final int compliance_curved_text = 0x7f07003a;
-        public static final int compliance_layout = 0x7f07003b;
-        public static final int compliance_observations = 0x7f07003c;
-        public static final int compliance_observed_compliance = 0x7f07003d;
-        public static final int compliance_percentage = 0x7f07003e;
-        public static final int compliance_total_count = 0x7f07003f;
+        public static final int activity_cardinal_bird = 0x7f080043;
+        public static final int circle_progress_bar = 0x7f080060;
+        public static final int compliance_curved_text = 0x7f080065;
+        public static final int compliance_layout = 0x7f080066;
+        public static final int compliance_observations = 0x7f080067;
+        public static final int compliance_observed_compliance = 0x7f080068;
+        public static final int compliance_percentage = 0x7f080069;
+        public static final int compliance_total_count = 0x7f08006a;
     }
     public static final class layout {
         private layout() {}
 
-        public static final int activity_main = 0x7f09001c;
+        public static final int activity_main = 0x7f0b001c;
     }
     public static final class string {
         private string() {}
 
-        public static final int app_name = 0x7f0c0028;
-        public static final int content_description = 0x7f0c002b;
-        public static final int curved_text_value = 0x7f0c002c;
-        public static final int home_screen_observations = 0x7f0c002f;
-        public static final int home_screen_observed_compliance = 0x7f0c0030;
-        public static final int percent_value = 0x7f0c0036;
-        public static final int total_observations = 0x7f0c003c;
+        public static final int app_name = 0x7f0f001c;
+        public static final int content_description = 0x7f0f0026;
+        public static final int curved_text_value = 0x7f0f0027;
+        public static final int home_screen_observations = 0x7f0f002f;
+        public static final int home_screen_observed_compliance = 0x7f0f0030;
+        public static final int percent_value = 0x7f0f005e;
+        public static final int total_observations = 0x7f0f0064;
     }
     public static final class style {
         private style() {}
 
-        public static final int AppTheme = 0x7f0d0005;
+        public static final int AppTheme = 0x7f100007;
     }
 }

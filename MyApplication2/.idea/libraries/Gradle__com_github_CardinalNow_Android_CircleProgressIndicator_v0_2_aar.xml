@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.CardinalNow:Android-CircleProgressIndicator:v0.2@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9fdbce49a5769d87c50012b1fd4292c6/Android-CircleProgressIndicator-v0.2/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9fdbce49a5769d87c50012b1fd4292c6/Android-CircleProgressIndicator-v0.2/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/320b68f0a633344605905d37ab152a59/Android-CircleProgressIndicator-v0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/320b68f0a633344605905d37ab152a59/Android-CircleProgressIndicator-v0.2/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

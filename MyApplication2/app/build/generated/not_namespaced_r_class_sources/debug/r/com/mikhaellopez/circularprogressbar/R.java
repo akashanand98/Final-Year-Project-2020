@@ -12,33 +12,33 @@ public final class R {
     public static final class attr {
         private attr() {}
 
-        public static final int cpb_background_progressbar_color = 0x7f020065;
-        public static final int cpb_background_progressbar_color_direction = 0x7f020066;
-        public static final int cpb_background_progressbar_color_end = 0x7f020067;
-        public static final int cpb_background_progressbar_color_start = 0x7f020068;
-        public static final int cpb_background_progressbar_width = 0x7f020069;
-        public static final int cpb_indeterminate_mode = 0x7f02006a;
-        public static final int cpb_progress = 0x7f02006b;
-        public static final int cpb_progress_direction = 0x7f02006c;
-        public static final int cpb_progress_max = 0x7f02006d;
-        public static final int cpb_progressbar_color = 0x7f02006e;
-        public static final int cpb_progressbar_color_direction = 0x7f02006f;
-        public static final int cpb_progressbar_color_end = 0x7f020070;
-        public static final int cpb_progressbar_color_start = 0x7f020071;
-        public static final int cpb_progressbar_width = 0x7f020072;
-        public static final int cpb_round_border = 0x7f020073;
-        public static final int cpb_start_angle = 0x7f020074;
+        public static final int cpb_background_progressbar_color = 0x7f0300d7;
+        public static final int cpb_background_progressbar_color_direction = 0x7f0300d8;
+        public static final int cpb_background_progressbar_color_end = 0x7f0300d9;
+        public static final int cpb_background_progressbar_color_start = 0x7f0300da;
+        public static final int cpb_background_progressbar_width = 0x7f0300db;
+        public static final int cpb_indeterminate_mode = 0x7f0300dc;
+        public static final int cpb_progress = 0x7f0300dd;
+        public static final int cpb_progress_direction = 0x7f0300de;
+        public static final int cpb_progress_max = 0x7f0300df;
+        public static final int cpb_progressbar_color = 0x7f0300e0;
+        public static final int cpb_progressbar_color_direction = 0x7f0300e1;
+        public static final int cpb_progressbar_color_end = 0x7f0300e2;
+        public static final int cpb_progressbar_color_start = 0x7f0300e3;
+        public static final int cpb_progressbar_width = 0x7f0300e4;
+        public static final int cpb_round_border = 0x7f0300e5;
+        public static final int cpb_start_angle = 0x7f0300e6;
     }
     public static final class dimen {
         private dimen() {}
 
-        public static final int default_background_stroke_width = 0x7f050057;
-        public static final int default_stroke_width = 0x7f050058;
+        public static final int default_background_stroke_width = 0x7f06005f;
+        public static final int default_stroke_width = 0x7f060061;
     }
     public static final class styleable {
         private styleable() {}
 
-        public static final int[] CircularProgressBar = { 0x7f020065, 0x7f020066, 0x7f020067, 0x7f020068, 0x7f020069, 0x7f02006a, 0x7f02006b, 0x7f02006c, 0x7f02006d, 0x7f02006e, 0x7f02006f, 0x7f020070, 0x7f020071, 0x7f020072, 0x7f020073, 0x7f020074 };
+        public static final int[] CircularProgressBar = { 0x7f0300d7, 0x7f0300d8, 0x7f0300d9, 0x7f0300da, 0x7f0300db, 0x7f0300dc, 0x7f0300dd, 0x7f0300de, 0x7f0300df, 0x7f0300e0, 0x7f0300e1, 0x7f0300e2, 0x7f0300e3, 0x7f0300e4, 0x7f0300e5, 0x7f0300e6 };
         public static final int CircularProgressBar_cpb_background_progressbar_color = 0;
         public static final int CircularProgressBar_cpb_background_progressbar_color_direction = 1;
         public static final int CircularProgressBar_cpb_background_progressbar_color_end = 2;

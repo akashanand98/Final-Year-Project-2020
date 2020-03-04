@@ -7,6 +7,7 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
+
     defaultConfig {
         applicationId "com.example.myapplication"
         minSdkVersion 19
@@ -33,6 +34,8 @@ android {
 }
 
 dependencies {
+    implementation "com.google.android.material:material:1.0.0"
+    implementation 'androidx.appcompat:appcompat:1.0.0-beta01'
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.0.2'
@@ -43,4 +46,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
     implementation 'com.mikhaellopez:circularprogressbar:3.0.3'
     implementation 'com.github.CardinalNow:Android-CircleProgressIndicator:v0.2'
+    implementation 'com.google.android.material:material:1.1.0'
 }
