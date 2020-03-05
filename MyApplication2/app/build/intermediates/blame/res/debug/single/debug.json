@@ -256,6 +256,10 @@
         "source": "C:\\Users\\akash\\.gradle\\caches\\transforms-2\\files-2.1\\b3661b335e25cc0bcec48b89246034c4\\appcompat-1.1.0\\res\\color-v23\\abc_tint_switch_track.xml"
     },
     {
+        "merged": "C:\\Users\\akash\\Downloads\\MyApplication2-sun\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_media_cancel_action.xml.flat",
+        "source": "C:\\Users\\akash\\.gradle\\caches\\transforms-2\\files-2.1\\08edb29a57f38059e60f29b32cf295b4\\media-1.0.0\\res\\layout\\notification_media_cancel_action.xml"
+    },
+    {
         "merged": "C:\\Users\\akash\\Downloads\\MyApplication2-sun\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
         "source": "C:\\Users\\akash\\.gradle\\caches\\transforms-2\\files-2.1\\b3661b335e25cc0bcec48b89246034c4\\appcompat-1.1.0\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
     },
@@ -302,6 +306,14 @@
     {
         "merged": "C:\\Users\\akash\\Downloads\\MyApplication2-sun\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\anim_btn_radio_to_on_mtrl_ring_outer_path_animation.xml.flat",
         "source": "C:\\Users\\akash\\.gradle\\caches\\transforms-2\\files-2.1\\b3661b335e25cc0bcec48b89246034c4\\appcompat-1.1.0\\res\\anim\\btn_radio_to_on_mtrl_ring_outer_path_animation.xml"
+    },
+    {
+        "merged": "C:\\Users\\akash\\Downloads\\MyApplication2-sun\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media_custom.xml.flat",
+        "source": "C:\\Users\\akash\\.gradle\\caches\\transforms-2\\files-2.1\\08edb29a57f38059e60f29b32cf295b4\\media-1.0.0\\res\\layout\\notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "C:\\Users\\akash\\Downloads\\MyApplication2-sun\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_media.xml.flat",
+        "source": "C:\\Users\\akash\\.gradle\\caches\\transforms-2\\files-2.1\\08edb29a57f38059e60f29b32cf295b4\\media-1.0.0\\res\\layout\\notification_template_media.xml"
     },
     {
         "merged": "C:\\Users\\akash\\Downloads\\MyApplication2-sun\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
@@ -800,6 +812,10 @@
         "source": "C:\\Users\\akash\\.gradle\\caches\\transforms-2\\files-2.1\\b3661b335e25cc0bcec48b89246034c4\\appcompat-1.1.0\\res\\layout\\abc_list_menu_item_layout.xml"
     },
     {
+        "merged": "C:\\Users\\akash\\Downloads\\MyApplication2-sun\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_tab5.xml.flat",
+        "source": "C:\\Users\\akash\\Downloads\\MyApplication2-sun\\MyApplication2\\app\\src\\main\\res\\layout\\fragment_tab5.xml"
+    },
+    {
         "merged": "C:\\Users\\akash\\Downloads\\MyApplication2-sun\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\akash\\.gradle\\caches\\transforms-2\\files-2.1\\b3661b335e25cc0bcec48b89246034c4\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
     },
@@ -1252,6 +1268,10 @@
         "source": "C:\\Users\\akash\\.gradle\\caches\\transforms-2\\files-2.1\\b3661b335e25cc0bcec48b89246034c4\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\akash\\Downloads\\MyApplication2-sun\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media_narrow_custom.xml.flat",
+        "source": "C:\\Users\\akash\\.gradle\\caches\\transforms-2\\files-2.1\\08edb29a57f38059e60f29b32cf295b4\\media-1.0.0\\res\\layout\\notification_template_big_media_narrow_custom.xml"
+    },
+    {
         "merged": "C:\\Users\\akash\\Downloads\\MyApplication2-sun\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\akash\\.gradle\\caches\\transforms-2\\files-2.1\\b3661b335e25cc0bcec48b89246034c4\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
     },
@@ -1492,6 +1512,10 @@
         "source": "C:\\Users\\akash\\Downloads\\MyApplication2-sun\\MyApplication2\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\akash\\Downloads\\MyApplication2-sun\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_lines_media.xml.flat",
+        "source": "C:\\Users\\akash\\.gradle\\caches\\transforms-2\\files-2.1\\08edb29a57f38059e60f29b32cf295b4\\media-1.0.0\\res\\layout\\notification_template_lines_media.xml"
+    },
+    {
         "merged": "C:\\Users\\akash\\Downloads\\MyApplication2-sun\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_calendar_selected_range.xml.flat",
         "source": "C:\\Users\\akash\\.gradle\\caches\\transforms-2\\files-2.1\\e6a991c5a52771af144f20ba50a4f297\\material-1.1.0\\res\\color\\mtrl_calendar_selected_range.xml"
     },
@@ -1712,6 +1736,10 @@
         "source": "C:\\Users\\akash\\.gradle\\caches\\transforms-2\\files-2.1\\b3661b335e25cc0bcec48b89246034c4\\appcompat-1.1.0\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
     },
     {
+        "merged": "C:\\Users\\akash\\Downloads\\MyApplication2-sun\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media_narrow.xml.flat",
+        "source": "C:\\Users\\akash\\.gradle\\caches\\transforms-2\\files-2.1\\08edb29a57f38059e60f29b32cf295b4\\media-1.0.0\\res\\layout\\notification_template_big_media_narrow.xml"
+    },
+    {
         "merged": "C:\\Users\\akash\\Downloads\\MyApplication2-sun\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "C:\\Users\\akash\\.gradle\\caches\\transforms-2\\files-2.1\\b3661b335e25cc0bcec48b89246034c4\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
     },
@@ -1884,6 +1912,10 @@
         "source": "C:\\Users\\akash\\.gradle\\caches\\transforms-2\\files-2.1\\e6a991c5a52771af144f20ba50a4f297\\material-1.1.0\\res\\drawable\\ic_keyboard_arrow_right_black_24dp.xml"
     },
     {
+        "merged": "C:\\Users\\akash\\Downloads\\MyApplication2-sun\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_media_custom.xml.flat",
+        "source": "C:\\Users\\akash\\.gradle\\caches\\transforms-2\\files-2.1\\08edb29a57f38059e60f29b32cf295b4\\media-1.0.0\\res\\layout\\notification_template_media_custom.xml"
+    },
+    {
         "merged": "C:\\Users\\akash\\Downloads\\MyApplication2-sun\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\akash\\.gradle\\caches\\transforms-2\\files-2.1\\b3661b335e25cc0bcec48b89246034c4\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
@@ -1968,6 +2000,10 @@
         "source": "C:\\Users\\akash\\Downloads\\MyApplication2-sun\\MyApplication2\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
     },
     {
+        "merged": "C:\\Users\\akash\\Downloads\\MyApplication2-sun\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_tab4.xml.flat",
+        "source": "C:\\Users\\akash\\Downloads\\MyApplication2-sun\\MyApplication2\\app\\src\\main\\res\\layout\\fragment_tab4.xml"
+    },
+    {
         "merged": "C:\\Users\\akash\\Downloads\\MyApplication2-sun\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\interpolator_mtrl_linear_out_slow_in.xml.flat",
         "source": "C:\\Users\\akash\\.gradle\\caches\\transforms-2\\files-2.1\\e6a991c5a52771af144f20ba50a4f297\\material-1.1.0\\res\\interpolator\\mtrl_linear_out_slow_in.xml"
     },
@@ -2034,6 +2070,10 @@
     {
         "merged": "C:\\Users\\akash\\Downloads\\MyApplication2-sun\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\anim_btn_radio_to_off_mtrl_ring_outer_animation.xml.flat",
         "source": "C:\\Users\\akash\\.gradle\\caches\\transforms-2\\files-2.1\\b3661b335e25cc0bcec48b89246034c4\\appcompat-1.1.0\\res\\anim\\btn_radio_to_off_mtrl_ring_outer_animation.xml"
+    },
+    {
+        "merged": "C:\\Users\\akash\\Downloads\\MyApplication2-sun\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_media_action.xml.flat",
+        "source": "C:\\Users\\akash\\.gradle\\caches\\transforms-2\\files-2.1\\08edb29a57f38059e60f29b32cf295b4\\media-1.0.0\\res\\layout\\notification_media_action.xml"
     },
     {
         "merged": "C:\\Users\\akash\\Downloads\\MyApplication2-sun\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_normal_pressed.9.png.flat",
@@ -2182,6 +2222,10 @@
     {
         "merged": "C:\\Users\\akash\\Downloads\\MyApplication2-sun\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
         "source": "C:\\Users\\akash\\.gradle\\caches\\transforms-2\\files-2.1\\b3661b335e25cc0bcec48b89246034c4\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "C:\\Users\\akash\\Downloads\\MyApplication2-sun\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media.xml.flat",
+        "source": "C:\\Users\\akash\\.gradle\\caches\\transforms-2\\files-2.1\\08edb29a57f38059e60f29b32cf295b4\\media-1.0.0\\res\\layout\\notification_template_big_media.xml"
     },
     {
         "merged": "C:\\Users\\akash\\Downloads\\MyApplication2-sun\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
@@ -2560,12 +2604,12 @@
         "source": "C:\\Users\\akash\\.gradle\\caches\\transforms-2\\files-2.1\\e6a991c5a52771af144f20ba50a4f297\\material-1.1.0\\res\\color\\material_on_primary_emphasis_medium.xml"
     },
     {
-        "merged": "C:\\Users\\akash\\Downloads\\MyApplication2-sun\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
-        "source": "C:\\Users\\akash\\.gradle\\caches\\transforms-2\\files-2.1\\b3661b335e25cc0bcec48b89246034c4\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
-    },
-    {
         "merged": "C:\\Users\\akash\\Downloads\\MyApplication2-sun\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_edit_text_material.xml.flat",
         "source": "C:\\Users\\akash\\.gradle\\caches\\transforms-2\\files-2.1\\b3661b335e25cc0bcec48b89246034c4\\appcompat-1.1.0\\res\\drawable\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\akash\\Downloads\\MyApplication2-sun\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
+        "source": "C:\\Users\\akash\\.gradle\\caches\\transforms-2\\files-2.1\\b3661b335e25cc0bcec48b89246034c4\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
     },
     {
         "merged": "C:\\Users\\akash\\Downloads\\MyApplication2-sun\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",

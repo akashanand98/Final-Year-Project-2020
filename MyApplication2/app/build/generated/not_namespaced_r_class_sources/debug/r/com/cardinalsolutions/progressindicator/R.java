@@ -20,8 +20,8 @@ public final class R {
         public static final int coral_blue = 0x7f050033;
         public static final int dark_blue = 0x7f050034;
         public static final int light_gray = 0x7f050065;
-        public static final int text_gray = 0x7f0500c7;
-        public static final int white = 0x7f0500ca;
+        public static final int text_gray = 0x7f0500c8;
+        public static final int white = 0x7f0500cb;
     }
     public static final class dimen {
         private dimen() {}
@@ -42,14 +42,14 @@ public final class R {
     public static final class id {
         private id() {}
 
-        public static final int activity_cardinal_bird = 0x7f080043;
-        public static final int circle_progress_bar = 0x7f080060;
-        public static final int compliance_curved_text = 0x7f080065;
-        public static final int compliance_layout = 0x7f080066;
-        public static final int compliance_observations = 0x7f080067;
-        public static final int compliance_observed_compliance = 0x7f080068;
-        public static final int compliance_percentage = 0x7f080069;
-        public static final int compliance_total_count = 0x7f08006a;
+        public static final int activity_cardinal_bird = 0x7f080044;
+        public static final int circle_progress_bar = 0x7f080062;
+        public static final int compliance_curved_text = 0x7f080067;
+        public static final int compliance_layout = 0x7f080068;
+        public static final int compliance_observations = 0x7f080069;
+        public static final int compliance_observed_compliance = 0x7f08006a;
+        public static final int compliance_percentage = 0x7f08006b;
+        public static final int compliance_total_count = 0x7f08006c;
     }
     public static final class layout {
         private layout() {}
@@ -62,10 +62,10 @@ public final class R {
         public static final int app_name = 0x7f0f001c;
         public static final int content_description = 0x7f0f0026;
         public static final int curved_text_value = 0x7f0f0027;
-        public static final int home_screen_observations = 0x7f0f002f;
-        public static final int home_screen_observed_compliance = 0x7f0f0030;
-        public static final int percent_value = 0x7f0f005e;
-        public static final int total_observations = 0x7f0f0064;
+        public static final int home_screen_observations = 0x7f0f0030;
+        public static final int home_screen_observed_compliance = 0x7f0f0031;
+        public static final int percent_value = 0x7f0f005f;
+        public static final int total_observations = 0x7f0f0065;
     }
     public static final class style {
         private style() {}

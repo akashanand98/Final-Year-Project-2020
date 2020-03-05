@@ -30,7 +30,7 @@ public class Tab1 extends Fragment {
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
-    private static TextView v1;
+    private static TextView r1c1,r1c2,r1c3;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -78,28 +78,31 @@ public class Tab1 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-//problems : textview dec and getting data from bundle.
+
 
         View RootView = inflater.inflate(R.layout.fragment_tab1, container, false);
         String strtext;
         MainActivity ma=(MainActivity) getActivity();
         strtext=ma.result;
-        //Log.v("str",strtext);
 
-        v1 = (TextView) RootView.findViewById(R.id.t1);
 
-//        Bundle args=this.getArguments();
-//
-//        String results = args.getString("results");
-//        Log.v("bundle",results);
+
+        r1c1=(TextView) RootView.findViewById(R.id.r1c1);
+        r1c2=(TextView) RootView.findViewById(R.id.r1c2);
+        r1c3=(TextView) RootView.findViewById(R.id.r1c3);
+
+
         String vul[]  = strtext.split("\n");
-        v1.setText("test");
-        Log.v("vul",vul[0]);
+        r1c1.setText("Insecured Storage - Shared Preferences");
         if(vul[0].equalsIgnoreCase("Yes"))
-            v1.setText("Vulnerable");
+            r1c2.setText("Vulnerable");
         else
-            v1.setText("Not Vulnerable");
+            r1c2.setText("Not Vulnerable");
 
+        if(vul[0].equalsIgnoreCase("Yes"))
+            r1c3.setText("Data is leaked through Shared Preferences object. Use different method to store data");
+        else
+            r1c3.setText("No data leakage");
 
 
 

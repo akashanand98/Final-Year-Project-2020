@@ -2,15 +2,103 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.myapplication.tab1">
+    tools:context="com.example.myapplication.Tab2">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
+    <TableLayout
+
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Tab 2"
-        android:layout_centerInParent="true"
-        android:textSize="30dp"
-        />
+        android:orientation="vertical"
+        >
+        <TableRow android:padding="5dip"
+            android:layout_marginTop="150dp"
+            android:layout_weight="3">
+
+            <TextView
+
+                android:background="#DAE8FC"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:text="Vulnerability"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"/>
+            <TextView
+                android:background="@drawable/table_row_last_bg"
+                android:id="@+id/r2c1"
+                android:layout_weight="7"
+                android:ellipsize="end"
+                android:layout_column="0"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_horizontal"
+
+                />
+
+
+
+        </TableRow>
+        <TableRow android:padding="5dip"
+
+            android:layout_weight="3">
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:background="#DAE8FC"
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:text="Status"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <TextView
+                android:background="@drawable/table_row_last_bg"
+                android:id="@+id/r2c2"
+                android:layout_weight="7"
+                android:ellipsize="end"
+                android:layout_column="0"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_horizontal"
+
+                />
+
+
+
+        </TableRow>
+        <TableRow android:padding="5dip"
+
+            android:layout_weight="3">
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:background="#DAE8FC"
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:text="Remarks"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <TextView
+                android:background="@drawable/table_row_last_bg"
+                android:id="@+id/r2c3"
+                android:layout_weight="7"
+                android:ellipsize="end"
+                android:layout_column="0"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_horizontal"
+
+                />
+
+
+
+        </TableRow>
+    </TableLayout>
 
 </RelativeLayout>

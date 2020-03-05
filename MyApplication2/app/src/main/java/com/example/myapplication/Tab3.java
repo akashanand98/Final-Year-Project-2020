@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 
@@ -26,6 +27,7 @@ public class Tab3 extends Fragment {
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
+    TextView r3c1,r3c2,r3c3;
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
@@ -66,8 +68,31 @@ public class Tab3 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_tab3, container, false);
+        View RootView = inflater.inflate(R.layout.fragment_tab3, container, false);
+        String strtext;
+        MainActivity ma=(MainActivity) getActivity();
+        strtext=ma.result;
+
+
+
+        r3c1=(TextView) RootView.findViewById(R.id.r3c1);
+        r3c2=(TextView) RootView.findViewById(R.id.r3c2);
+        r3c3=(TextView) RootView.findViewById(R.id.r3c3);
+
+
+        String vul[]  = strtext.split("\n");
+        r3c1.setText("Data Leakage through Log");
+        if(vul[2].equalsIgnoreCase("Yes"))
+            r3c2.setText("Vulnerable");
+        else
+            r3c2.setText("Not Vulnerable");
+
+        if(vul[2].equalsIgnoreCase("Yes"))
+            r3c3.setText("Data is leaked through Log. Ensure that sensitive data is not stored in log");
+        else
+            r3c3.setText("No data leakage");
+
+        return RootView;
     }
 
     // TODO: Rename method, update argument and hook method into UI event

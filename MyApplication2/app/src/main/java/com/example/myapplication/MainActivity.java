@@ -13,7 +13,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
 
-public class MainActivity extends AppCompatActivity implements Tab1.OnFragmentInteractionListener,Tab2.OnFragmentInteractionListener,Tab3.OnFragmentInteractionListener {
+public class MainActivity extends AppCompatActivity implements Tab1.OnFragmentInteractionListener,Tab2.OnFragmentInteractionListener,Tab3.OnFragmentInteractionListener,Tab4.OnFragmentInteractionListener,Tab5.OnFragmentInteractionListener {
 
     String result;
     @Override
@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity implements Tab1.OnFragmentIn
         tabLayout.addTab(tabLayout.newTab().setText("V 1"));
         tabLayout.addTab(tabLayout.newTab().setText("V 2"));
         tabLayout.addTab(tabLayout.newTab().setText("V 3"));
+        tabLayout.addTab(tabLayout.newTab().setText("V 4"));
+        tabLayout.addTab(tabLayout.newTab().setText("V 5"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
         final ViewPager viewPager = (ViewPager)findViewById(R.id.pager);

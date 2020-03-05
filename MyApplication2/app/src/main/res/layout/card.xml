@@ -21,7 +21,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Vulnerabilitiy Report"
+            android:text="Vulnerability Report"
             android:gravity="center_horizontal"
             android:layout_marginLeft="100dp"
             android:textStyle="bold"
